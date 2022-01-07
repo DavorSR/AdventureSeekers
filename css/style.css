@@ -13,8 +13,8 @@ body {
 
 nav {
     background-color: black;
-    height: 5vh;
-    font-size: 1, 2em;
+    height: 7vh;
+    font-size: 1,4em;
     color: white;
     margin: 0px auto;
     text-align: center;
@@ -22,7 +22,7 @@ nav {
 
 ul li {
     display: inline-block;
-    padding: 7px 0 0 8px;
+    padding: 13px 0 0 8px;
 }
 
 li a {

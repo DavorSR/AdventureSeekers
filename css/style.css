@@ -53,7 +53,6 @@ section .image {
 
 .slogan {
     width: 53%;
-    height: 34vh;
     display: block;
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -61,37 +60,27 @@ section .image {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    padding-bottom: 1%;
 }
 
 .slogan h2 {
-    /* position: absolute;
-left: 50%;
-transform: translate(-50%); */
-    padding: 10px 20px;
+    padding: 1% 2%;
     text-align: center;
-    margin: 5px 5px 5px 5px;
+    margin: 0.5% 0.5%;
     font-size: 1.8em;
 }
 
 .slogan p {
-    /* position: absolute;
-top: 60%;
-left: 50%;
-transform: translate(-50%, -50%); */
-    padding: 5px 40px;
+    padding: 2% 10%;
     text-align: center;
     font-size: 1.3em;
 }
 
 .details {
-    /* position: absolute;
-top: 70%;
-left: 50%;
-transform: translate(-50%, -50%); */
     margin: 5px auto;
-    padding: 10px;
-    width: 250px;
-    height: 20px;
+    padding: 1% 0;
+    width: 30%;
+    height: 10%;
     background-color: yellow;
     color: black;
     text-align: center;
@@ -119,14 +108,14 @@ transform: translate(-50%, -50%); */
     height: 20vh;
     background-color: #121315;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 2%;
     color: white;
     font-size: 1.6em;
 }
 
 .search h2 {
     text-align: center;
-    margin: 5px 5px 5px 5p;
+    margin: 0.2% 0;
 }
 
 .search select,
@@ -141,7 +130,7 @@ input {
 }
 
 .search button {
-    width: 140px;
+    width: 10%;
     height: 28px;
     background-color: #00ecff;
     border: none;
@@ -156,8 +145,7 @@ input {
 
 .search .slogan2 {
     width: 100%;
-    height: 20px;
-    margin-top: 10px;
+    margin-top: 1px;
     text-align: center;
     font-size: 0.5em;
 }
@@ -381,67 +369,143 @@ input {
     box-shadow: -0px 7px rgb(213, 185, 28, 0.7);
 }
 
+/* Travel Tips */
+
 .tips {
     width: 80%;
     margin: 30px auto 30px auto;
     display: flex;
     justify-content: space-between;
     text-align: justify;
-    
 }
 
-.tips h3{
+.tips h3 {
     font-size: 1.8em;
     /* padding-bottom: 20px; */
 }
 
-.tips span{
+.tips span {
     box-shadow: -0px 7px rgb(213, 185, 28, 0.7);
-    
-
 }
 
-.subtext{
+.subtext {
     margin: 20px 0;
     color: lightgray;
 }
 
-.tips p{
+.tips p {
     font-size: 1.1em;
     font-style: italic;
 }
 
-.gear, .travel{
-margin: 0 30px;
+.gear,
+.travel {
+    margin: 0 30px;
 }
 
 .travel {
     padding-top: 50px;
 }
 
-.join{
-    background-color:rgb(242, 243, 244);
+/* Join US, Social Media */
+
+.join {
+    background-color: rgb(242, 243, 244);
     text-align: center;
     font-size: 2em;
     padding: 30px 0;
 }
 
-.join p{
+.join p {
     margin: 0 auto;
     width: 40%;
     font-size: 0.5em;
     font-style: italic;
 }
 
-.social img{
+.social img {
     padding: 30px 20px;
-
-   
 }
 
-.social img:hover{
+.social img:hover {
     opacity: 0.7;
     transform: rotate3d(1, 1, 1, 25deg);
     transition-duration: 500ms;
+}
 
+.insta img {
+    padding-top: 30px;
+    width: 250px;
+    height: 200px;
+}
+
+.insta img:hover {
+    opacity: 0.7;
+    transform: rotate3d(1, 1, 1, 15deg);
+    transition-duration: 500ms;
+}
+
+/* Footer, sign up, contact */
+
+footer {
+    padding: 20px 0 0 0;
+    font-size: 1.2em;
+    background: rgb(29, 27, 27);
+    position: relative;
+}
+
+.newsletter {
+    display: inline-block;
+    width: 60%;
+    padding-top: 10px;
+}
+
+footer label {
+    color: white;
+    padding: 0 20px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+footer input {
+    width: 35%;
+    height: 30px;
+    padding: 0 0 0 15px;
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+footer button {
+    padding: 7px 12px;
+    background: yellow;
+    border: none;
+}
+footer button:hover {
+    background: white;
+    color: black;
+}
+
+.contact {
+    /* padding: 10px 0 0 0; */
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    width: 30%;
+    display: inline-block;
+    color: white;
+}
+
+.contact span {
+    font-style: italic;
+}
+
+.copy {
+    width: 100%;
+    margin-top: 30px;
+    padding: 8px 0;
+    font-size: 0.7em;
+    background: rgb(0, 0, 0);
+    display: block;
+    color: white;
+    text-align: center;
 }

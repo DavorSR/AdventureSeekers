@@ -1,0 +1,400 @@
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+
+body{
+background-color: white;
+width: 100%;
+
+}
+
+/* Top navigacija */
+
+nav{
+background-color: black;
+height: 5vh;
+font-size: 1,2em;
+color: white;
+margin: 0px auto;
+text-align: center;
+}
+
+ul li {
+
+display: inline-block;
+padding: 7px 0 0 8px;
+}
+
+li a{
+color: white;
+
+
+}
+
+ul li:hover{
+    display: inline-block;
+    color: black;
+    height: 6vh;
+    background-color: yellow;
+    }
+
+ul li a:hover{
+display: inline-block;
+color: black;
+height: 6vh;
+background-color: yellow;
+}
+
+
+/* Sekcija 1 slika i slogan */
+
+section .image {
+
+background: url('../img/naslovna.jpg') no-repeat center center/cover;
+    height: 660px;
+    position: relative;
+}
+
+.slogan{
+width: 53%;
+height: 34vh;
+display: block;
+background-color: rgba(0,0,0,.7); 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.slogan h2{
+/* position: absolute;
+left: 50%;
+transform: translate(-50%); */
+padding: 10px 20px;
+text-align: center;
+margin: 5px 5px 5px 5px;
+font-size: 1.8em;
+}
+
+.slogan p{
+/* position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%); */
+padding: 5px 40px;
+text-align:center;
+font-size: 1.3em;
+}
+
+.details {
+/* position: absolute;
+top: 70%;
+left: 50%;
+transform: translate(-50%, -50%); */
+margin: 5px auto ;
+padding: 10px;
+width: 250px;
+height: 20px;
+background-color: yellow;
+color: black;
+text-align: center;
+
+}
+
+.details:hover{
+background-color: white;
+}
+
+
+.details a{
+color:black;
+font-weight: bold;
+font-size: 1.2em;
+}
+
+.details a:hover {
+background-color: white;
+color: black;
+}
+
+/* Main page search */
+
+.search {
+width: 100%;
+height: 20vh;
+background-color: #121315; 
+text-align: center;
+padding-top: 5vh;
+color: white;
+font-size: 1.6em;
+}
+
+.search h2 {
+text-align: center;
+margin: 5px 5px 5px 5p
+}
+
+.search select, input {
+width: 15%;
+height: 25px;
+margin-top: 5px;
+border-radius: 5px;
+text-align: left;
+font-size: 0.4;
+border: 1px solid #9f0000;
+}
+
+.search button{
+width: 140px;
+height: 28px;
+background-color: #00ECFF;
+border: none;
+color: white;
+font-size: 0.6em;
+}
+
+.search button:hover{
+background-color: white;
+color: black;
+}
+
+.search .slogan2{
+width: 100%;
+height: 20px;
+margin-top:10px;
+text-align: center;
+font-size: 0.5em;
+
+}
+
+/* middle part, image, boxes */
+
+.warper{
+width: 100%;
+text-align: center;
+position: relative;
+}
+
+.warper .top{
+position: absolute;
+top: 65%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+.warper img{
+width: 35%;
+opacity: 0.5;
+
+}
+
+.top h2 {
+font-size: 2.6em;
+padding-bottom: 8px;
+}
+
+.top p{
+font-size: 0.9em;
+font-weight: bold;
+color: rgba(162, 96, 96, 0.912); 
+margin-bottom: 10px;
+}
+
+.top h2 span{
+box-shadow:-0px 12px  rgb(213, 185, 28, 0.7);
+}
+
+/* Featured destinations */
+
+.topDestinations{
+display: block;
+font-size: 2.4em;
+box-shadow:-5px 8px  rgb(213, 185, 28, 0.7);
+margin: 0px 0px 15px 38px;
+
+}
+
+.feature{
+display: flex;
+justify-content: space-evenly;
+}
+
+.promo {
+position: relative;
+width: 400px;
+margin-bottom: 20px;
+margin-left: 20px;
+
+}
+
+.slika{
+display: block;
+width: 100%;
+height: 250px;
+border-radius: 5px;
+}
+
+.image_overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
+color: #fff;
+font-family:Arial, Helvetica, sans-serif;
+display: flex;
+flex-direction: column;
+align-items: center; 
+justify-content: center;
+opacity: 0;
+transition: opacity 0.25s;
+}
+
+.image_overlay >* {
+transform: translate(20px);
+transition: transform 0.25s;
+}
+
+.image_overlay:hover{
+opacity: 1;
+}
+.image_overlay:hover>* {
+transform:translateY(0);
+}
+
+.title{
+font-size: 2em;
+font-weight: bold;
+}
+
+.description{
+font-size: 1.25em;
+margin-top: 0.25em;
+text-align: justify;
+margin: 5px 8px 0px 8px;
+}
+
+.space{
+width: 100%;
+height: 20px;
+background-color: royalblue;
+position: absolute;
+}
+
+/* About Us */
+
+
+.travel{
+
+position: relative;
+height:450px;
+    
+}
+
+.world{
+padding-top: 20px;
+display: inline-block;
+position: relative;
+width: 350px;
+height: 250px;
+text-align: justify;
+padding: 10px 10px;
+border: 1px solid rgb(213, 185, 28);
+border-radius: 5px;
+top: 40%;
+left: 40%;
+transform: translate(-50%, -50%);
+}
+
+.world h2{
+    font-size: 1.2em;
+padding-bottom: 20px;
+text-align: left;
+}
+
+.world p{
+    margin: 0px 15px;
+    font-style: italic;
+}
+
+.world a{
+position: absolute;
+left: 15px;
+bottom: 20px;
+padding: 10px;
+width: 150px;
+height: 15px;
+background-color: yellow;
+color: black;
+text-align: center;
+
+}
+
+.world a:hover{
+border: 1px solid black;
+background-color: white;
+}
+
+.travel .warpedImg{
+    width: 40%;
+    height: 400px;
+    position: absolute;
+    background: url('../img/aboutUs.jpg') no-repeat center center/cover;
+    border-radius:77% 23% 19% 81% / 13% 46% 54% 87% ;
+    top: 52%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+}
+
+
+.team{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    
+}
+
+.team div{
+    padding-top: 180px;
+}
+
+.team img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.team h4{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.team p{
+    font-style: italic;
+}
+
+.aboutTeam{
+        
+        position: absolute;
+        top:1%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+
+.aboutTeam h2 {
+            font-size: 2.6em;
+            padding-bottom: 8px;
+            }
+        
+ .aboutTeam h2 span{
+            box-shadow:-0px 7px  rgb(213, 185, 28, 0.7);
+            }

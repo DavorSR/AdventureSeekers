@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +26,7 @@ ul li {
     padding: 13px 0 0 8px;
 }
 
+
 li a {
     color: white;
 }
@@ -41,7 +43,9 @@ ul li a:hover {
     color: black;
     height: 6vh;
     background-color: yellow;
+    
 }
+
 
 /* Sekcija 1 slika i slogan */
 

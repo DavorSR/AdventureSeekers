@@ -1,0 +1,286 @@
+/* Top navigacija */
+
+.burger {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url("../img/menu.png") no-repeat 98% center;
+    cursor: pointer;
+}
+
+nav ul {
+    overflow: hidden;
+    background: #505050;
+    height: 0;
+}
+nav ul.open {
+    height: auto;
+}
+
+nav ul li {
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+}
+
+ul li:hover {
+    display: inline-block;
+    color: black;
+    background-color: rgb(65, 65, 58);
+}
+
+ul li a:hover {
+    display: inline-block;
+    color: black;
+    background-color: rgb(65, 65, 58);
+}
+
+/* Sekcija 1 slika i slogan */
+
+section .image {
+    background: url("../img/naslovna.jpg") no-repeat center center/cover;
+    height: 450px;
+    position: relative;
+}
+
+.slogan {
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding-bottom: 1%;
+}
+
+.details {
+    margin: 5px auto;
+    padding: 1% 0;
+    width: 30%;
+    height: 10%;
+    font-size: 0.7em;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
+
+.details:hover {
+    background-color: white;
+}
+
+.details a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.details a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Main page search */
+
+.search button {
+    width: 10%;
+    height: 28px;
+    background-color: #00ecff;
+    border: none;
+    color: white;
+    font-size: 0.3em;
+}
+
+.search button:hover {
+    background-color: white;
+    color: black;
+}
+
+.search .slogan2 {
+    width: 100%;
+    margin-top: 1px;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+/* middle part, image, boxes */
+
+.top h2 {
+    font-size: 1.3em;
+    padding-bottom: 8px;
+}
+
+.top p {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: rgba(162, 96, 96, 0.912);
+    margin-bottom: 10px;
+}
+
+/* Featured destinations */
+
+.topDestinations {
+    display: block;
+    font-size: 1.8em;
+    box-shadow: -5px 8px rgb(213, 185, 28, 0.7);
+    margin: 0px 0px 15px 38px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5vw;
+}
+
+
+/* About Us */
+
+.world {
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    text-align: justify;
+    border: 1px solid rgb(213, 185, 28);
+    border-radius: 5px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.travel .warpedImg {
+    display: none;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.team div {
+    padding-top: 30px;
+}
+
+.team p {
+    font-style: italic;
+    padding-bottom: 8vh;
+}
+
+.aboutTeam h2 {
+    font-size: 1.3em;
+    padding-bottom: 8px;
+}
+
+.aboutTeam h2 span {
+    box-shadow: -0px 7px rgb(213, 185, 28, 0.7);
+}
+
+/* Travel Tips */
+
+.tips {
+    width: 80%;
+    margin: 30px auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+/* Join US, Social Media */
+
+.join {
+    background-color: rgb(242, 243, 244);
+    text-align: center;
+    font-size: 1.6em;
+    padding: 30px 0;
+}
+
+.join p {
+    margin: 0 auto;
+    width: 60%;
+    font-size: 0.5em;
+    font-style: italic;
+}
+
+.social img {
+    padding: 30px 10px;
+}
+
+
+
+/* Footer, sign up, contact */
+
+footer {
+    padding: 20px 0 0 0;
+    font-size: 1.2em;
+    background: rgb(29, 27, 27);
+}
+
+.newsletter {
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+}
+
+footer label {
+    width: 100%;
+    margin-left: 58px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+footer input {
+    margin-left: 30px;
+    width: 60%;
+    height: 30px;
+    padding: 0 0 0 5px;
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+footer button {
+    padding: 7px 12px;
+    background: yellow;
+    border: none;
+}
+footer button:hover {
+    background: white;
+    color: black;
+}
+
+.contact {
+    padding-top: 80px;
+    width: 90%;
+}
+
+.contact span {
+    font-style: italic;
+}
+
+.contact a {
+    color: #adbdf2;
+}
+
+.copy {
+    width: 100%;
+    margin-top: 80px;
+    padding: 8px 0;
+    font-size: 0.7em;
+    background: rgb(0, 0, 0);
+    display: block;
+    color: white;
+    text-align: center;
+}

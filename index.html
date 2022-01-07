@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px" href="css/mobile.css">
     <title>Turisticka Agencija</title>
 </head>
 
@@ -14,16 +15,19 @@
     <header>
         <nav>
 
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ADVENTURES</a></li>
-                <li><a href="#">DESTINATIOS</a></li>
-                <li><a href="#">GEAR GUIDES</a></li>
-                <li><a href="#">INSPIRATION</a></li>
-                <li><a href="#">PAGES</a></li>
-                <li><a href="#">OFFERS</a></li>
-            </ul>
-
+            <div>
+                <a href="#" class="burger"></a>
+                <ul>
+                    <li ><a href="#">HOME</a></li>
+                    <li><a href="#">ADVENTURES</a></li>
+                    <li><a href="#">DESTINATIOS</a></li>
+                    <li><a href="#">GEAR GUIDES</a></li>
+                    <li><a href="#">INSPIRATION</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">OFFERS</a></li>
+                </ul>
+            </div>
+      
         </nav>
     </header>
 
@@ -89,7 +93,7 @@
         <!-- content section -->
         <section>
             <div class="warper">
-                <img src="/img/mountain.png" alt="">
+                <img src="img/mountain.png" alt="">
                 <div class="top">
                     <h2><span>WHAT</span> WE DO</h2>
                     <p>EXPERT INSIGHT AND ADVICES</p>
@@ -101,7 +105,7 @@
             <h2 class="topDestinations">Top Destinations</h2>
             <div class="feature">
                 <div class="promo">
-                    <img class="slika" src="/img/borabora.png" alt="">
+                    <img class="slika" src="img/borabora.png" alt="">
                     <div class="image_overlay">
                         <div class="title">Bora Bora</div>
                         <p class="description">
@@ -112,7 +116,7 @@
                     </div>
                 </div>
                 <div class="promo">
-                    <img class="slika" src="/img/egypt.jpg" alt="">
+                    <img class="slika" src="img/egypt.jpg" alt="">
                     <div class="image_overlay">
                         <div class="title">Egypt</div>
                         <p class="description">
@@ -123,7 +127,7 @@
                     </div>
                 </div>
                 <div class="promo">
-                    <img class="slika" src="/img/japan.jpg" alt="">
+                    <img class="slika" src="img/japan.jpg" alt="">
                     <div class="image_overlay">
                         <div class="title">Japan</div>
                         <p class="description">
@@ -141,7 +145,6 @@
         <section>
             <div class="travel">
                 <div class="world">
-                    <!-- <img src="/img/travel.png" alt=""> -->
                     <div>
                         <h2>We are experts in Adventure</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quaerat perferendis
@@ -165,22 +168,22 @@
                 </div>
 
                 <div>
-                    <img src="/img/JD1.jpg" alt="">
+                    <img src="img/JD1.jpg" alt="">
                     <h4>John Doe</h4>
                     <p>Author, Adventures</p>
                 </div>
                 <div>
-                    <img src="/img/jd2.jpg" alt="">
+                    <img src="img/jd2.jpg" alt="">
                     <h4>John Doe</h4>
                     <p>Paragliding, Adventures</p>
                 </div>
                 <div>
-                    <img src="/img/JD3.jpg" alt="">
+                    <img src="img/jd3.jpg" alt="">
                     <h4>John Doe</h4>
                     <p>Alpinist, Adventures</p>
                 </div>
                 <div>
-                    <img src="/img/JD4.jpg" alt="">
+                    <img src="img/jd4.jpg" alt="">
                     <h4>John Doe</h4>
                     <p>Swimmer, Adventures</p>
                 </div>
@@ -231,48 +234,50 @@
         <section class="join">
             <h2>Join the Conversations</h2>
             <div class="social">
-                <a href="#"><img src="/img/social/instagram.png" alt=""></a>
-                <a href="#"><img src="/img/social/fb.png" alt=""></a>
-                <a href="#"><img src="/img/social/youtube.png" alt=""></a>
-                <a href="#"><img src="/img/social/twitter.png" alt=""></a>
+                <a href="#"><img src="img/social/instagram.png" alt=""></a>
+                <a href="#"><img src="img/social/fb.png" alt=""></a>
+                <a href="#"><img src="img/social/youtube.png" alt=""></a>
+                <a href="#"><img src="img/social/twitter.png" alt=""></a>
             </div>
 
             <p>We are more than a Travel agency, we are a thrill seeker and adventures exploring the world around us!
             </p>
 
             <div class="insta">
-                <img src="/img/instagram images/1.jpg" alt="">
-                <img src="/img/instagram images/2.jpg" alt="">
-                <img src="/img/instagram images/3.jpg" alt="">
-                <img src="/img/instagram images/4.jpg" alt="">
-                <img src="/img/instagram images/5.jpg" alt="">
+                <img src="img/instagram images/1.jpg" alt="">
+                <img src="img/instagram images/2.jpg" alt="">
+                <img src="img/instagram images/3.jpg" alt="">
+                <img src="img/instagram images/4.jpg" alt="">
+                <img src="img/instagram images/5.jpg" alt="">
             </div>
 
         </section>
     </main>
     <footer>
 
-        <div class="newsletter">
-            <label for="email">Stay up to date with our newsletter</label>
-            <input type="email" name="email" placeholder="Enter your email adresss">
-            <button type="submit" id="submit">SIGN UP NOW</button>
-        </div>
-
-        <div class="contact">
-            <p>
-                <span>Address:</span> 423B, Road Wordwide Country, USA
-                <br>
-                <span>Email:</span> <a href="mailto:abcd@gmail.com">abcd@gmail.com</a>
-                <br>
-                Phone: <a href="#">+91-234-567-8900</a>
-            </p>
-
-        </div>
+    
+            <div class="newsletter">
+                <label for="email">Stay up to date with our newsletter</label>
+                <input type="email" name="email" placeholder="Enter your email adresss">
+                <button type="submit" id="submit">SIGN UP NOW</button>
+            </div>
+            <div class="contact">
+                <p>
+                    <span>Address:</span> 423B, Road Wordwide Country, USA
+                    <br>
+                    <span>Email:</span> <a href="mailto:abcd@gmail.com">abcd@gmail.com</a>
+                    <br>
+                    Phone: <a href="#">+91-234-567-8900</a>
+                </p>
+            </div>
+       
 
         <br>
         <div class="copy">DavorSR © 2021 / ALL RIGHTS RESERVED</div>
     </footer>
 
 </body>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="menu.js"></script>
 
 </html>

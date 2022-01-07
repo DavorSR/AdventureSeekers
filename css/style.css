@@ -499,6 +499,10 @@ footer button:hover {
     font-style: italic;
 }
 
+.contact a{
+    color: #adbdf2;
+}
+
 .copy {
     width: 100%;
     margin-top: 30px;

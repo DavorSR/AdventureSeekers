@@ -17,16 +17,14 @@ nav {
     font-size: 1, 4em;
     color: white;
     margin: 0px auto;
+    padding: 5px 0;
     text-align: center;
 }
 
 nav ul li {
     display: inline-block;
     padding: 13px 0 0 8px;
-}
-
-li a {
-    color: white;
+    color: #fff;
 }
 
 ul li:hover {
@@ -35,9 +33,13 @@ ul li:hover {
     background-color: yellow;
 }
 
+li a {
+    color: #fff;
+}
+
 ul li a:hover {
     color: black;
-    height: 6vh;
+    /* height: 6vh; */
     background-color: yellow;
 }
 
@@ -380,7 +382,6 @@ input {
 
 .tips h3 {
     font-size: 1.8em;
-    /* padding-bottom: 20px; */
 }
 
 .tips span {
@@ -439,8 +440,7 @@ input {
 }
 
 .insta img:hover {
-    opacity: 0.7;
-    transform: rotate3d(1, 1, 1, 15deg);
+    transform: scale(1.2);
     transition-duration: 500ms;
 }
 
@@ -530,7 +530,8 @@ footer button:hover {
         background: #505050;
         position: relative;
         z-index: 10000;
-        height: 0;
+        display: flex;
+        flex-direction: column;
     }
     nav ul.open {
         height: auto;
@@ -638,8 +639,6 @@ footer button:hover {
         margin: 10px auto;
     }
 
-      
-
     /* Featured destinations */
 
     .topDestinations {
@@ -731,18 +730,12 @@ footer button:hover {
 
     /* Footer, sign up, contact */
 
-
-    .newsletter label{
+    .newsletter label {
         width: 80%;
     }
-
-  
-
-
 }
 
 @media screen and (max-width: 992px) {
-
     .burger {
         display: block;
         height: 40px;
@@ -750,10 +743,10 @@ footer button:hover {
         background: url("../img/menu.png") no-repeat 98% center;
         cursor: pointer;
     }
-    
+
     nav ul {
         overflow: hidden;
-        background: #505050;
+        background: #0a0a0a;
         position: relative;
         z-index: 10000;
         height: 0;
@@ -761,7 +754,7 @@ footer button:hover {
     nav ul.open {
         height: auto;
     }
-    
+
     nav ul li {
         float: none;
         text-align: left;
@@ -769,24 +762,23 @@ footer button:hover {
         margin: 0;
         padding: 0;
     }
-    
+
     nav ul li a {
         color: #fff;
-        padding: 10px;
-        border-bottom: 1px solid #404040;
+        padding: 15px;
         display: block;
         margin: 0;
     }
-    
+
     ul li:hover {
-        color: black;
+        color: #fff;
+        padding: 12px;
         background-color: rgb(65, 65, 58);
     }
-    
+
     nav ul li a:hover {
-        color: black;
+        color: #fff;
         background-color: rgb(65, 65, 58);
-        height: 0;
     }
 
     /* middle part, image, boxes */
@@ -809,8 +801,6 @@ footer button:hover {
 
     /* Featured destinations */
 
-
-
     .feature {
         display: flex;
         flex-direction: column;
@@ -819,7 +809,6 @@ footer button:hover {
 
     /* About Us */
 
-  
     .team div {
         padding-top: 50px;
     }
@@ -828,8 +817,6 @@ footer button:hover {
         font-style: italic;
         padding-bottom: 8vh;
     }
-
-
 
     .aboutTeam h2 span {
         box-shadow: -0px 7px rgb(213, 185, 28, 0.7);
@@ -861,8 +848,10 @@ footer button:hover {
         font-style: italic;
     }
 
-    .social img {
-        padding: 30px 10px;
+    .insta img:hover {
+        opacity: 0.7;
+        transform: scale(1.2);
+        transition-duration: 500ms;
     }
 
     /* Footer, sign up, contact */
@@ -872,16 +861,13 @@ footer button:hover {
         flex-direction: column;
     }
 
-    .newsletter input{
+    .newsletter input {
         width: 55%;
         margin: 10px 10px;
     }
 
-    .newsletter button{
+    .newsletter button {
         width: 58%;
         margin: 0 10px;
     }
-
-    
-
 }

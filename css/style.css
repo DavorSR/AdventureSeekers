@@ -19,21 +19,21 @@ nav {
 
 nav ul li {
     display: inline-block;
-    padding: 13px 3px 13px 3px;
+    padding: 13px 3px;
     color: #fff;
 }
 
 
 li a {
     color: #fff;
+    padding: 13px 3px;
 }
 
 
 li a:hover {
     color: black;
-    padding: 13px 3px 13px 3px;
     background-color: yellow;
-    transition: 200ms ease;
+    transition: 100ms ease;
 }
 
 
@@ -44,6 +44,7 @@ section .image {
     background: url("../img/naslovna.jpg") no-repeat center center/cover;
     height: 660px;
     position: relative;
+    z-index: 11;
 }
 
 .slogan {
@@ -106,9 +107,9 @@ section .image {
     margin: 0.2% 0;
 }
 
-form{
-    /* justify-self: c; */
-}
+/* form{
+    justify-self: center;
+} */
 
 .search select,
 
@@ -125,12 +126,12 @@ input {
 }
 
 .search button {
-    width: 10%;
-    padding: 1px 10px 3px 10px;
+    padding: 2px 10px;
+    align-items: center;
     background-color: #00ecff;
     border: none;
     color: white;
-    font-size: 0.8em;
+    font-size: 1.2rem;
     transition: 200ms ease;
 }
 
@@ -525,15 +526,21 @@ footer button:hover {
         width: 100%;
         background: url("../img/menu.png") no-repeat 98% center;
         cursor: pointer;
+
+    }
+
+    .main {
+        z-index: 9999;
+        position: absolute;
     }
 
     nav ul {
         overflow: hidden;
         background: #0a0a0a;
         position: relative;
-        z-index: 10000;
         height: 0;
     }
+
 
     nav ul.open {
         height: auto;
@@ -566,6 +573,7 @@ footer button:hover {
         background-color: rgb(65, 65, 58);
     }
 
+
     /* middle part, image, boxes */
 
     .promo {
@@ -589,7 +597,12 @@ footer button:hover {
     .feature {
         display: flex;
         flex-direction: column;
-        padding-left: 5vw;
+    }
+
+    .promo {
+        width: 80%;
+        height: fit-content;
+        margin: 10px auto;
     }
 
     /* About Us */

@@ -107,9 +107,6 @@ section .image {
     margin: 0.2% 0;
 }
 
-/* form{
-    justify-self: center;
-} */
 
 .search select,
 
@@ -120,7 +117,7 @@ input {
     border-radius: 5px;
     outline: none;
     text-align: left;
-    font-size: 0.4;
+    font-size: 1rem;
     border: 1px solid #9f0000;
     outline: none;
 }

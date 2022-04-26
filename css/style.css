@@ -85,7 +85,7 @@ section .image {
     font-size: 1.2em;
 }
 
-.details a:hover {
+.slogan a:hover {
     background-color: white;
     color: black;
 }
